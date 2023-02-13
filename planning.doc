@@ -1,0 +1,38 @@
+Goal:
+Help users create playlists using AI in a fun, novel way.
+
+Functionality:
+- Create playlists using AI
+- Add playlists to Spotify, Apple Music
+- Log in to further customize playlists
+- Share playlists to popular social media
+-> Export as image to Instagram/Snapchat/Facebook, etc.
+-> Export as a link 
+-> Copy to clipboard
+- Recommendations from a playlist (Spotify, Apple Music, or the website itself)
+- Ads/support me
+
+Roadmap:
+1. Basic page with text prompt to generate recommended playlist
+2. Logging in
+    -> Adding playlist to spotify etc
+    -> Further customizing generated playlists
+    -> Creating recommendations from a playlist on spotify
+3. Sharing
+4. Ads
+
+Backend Endpoints:
+- Get songs from text (optionally specify a user login)
+- Get songs from form (optionally specify a user login)
+- Get a link to a webpage to view a generated playlist
+- Get an image from a playlist?
+- log a user in using Spotify or Apple Music?
+
+Tech stack:
+- Frontend
+    - React
+    - Redux
+    - Material UI
+- Backend
+    - Flask
+    - MongoDB?
