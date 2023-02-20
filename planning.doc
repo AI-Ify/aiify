@@ -21,13 +21,6 @@ Roadmap:
 3. Sharing
 4. Ads
 
-Backend Endpoints:
-- Get songs from text (optionally specify a user login)
-- Get songs from form (optionally specify a user login)
-- Get a link to a webpage to view a generated playlist
-- Get an image from a playlist?
-- log a user in using Spotify or Apple Music?
-
 Tech stack:
 - Frontend
     - React
@@ -36,3 +29,43 @@ Tech stack:
 - Backend
     - Flask
     - MongoDB?
+
+
+
+Backend Endpoints:
+
+/playlist/text/
+/playlist/like/
+/playlist/durable/
+
+/image/
+
+/login/spotify/
+
+1. Generate playlist from text
+    GET /playlist/{text}&{?length}&{?login=False}
+        resp => [spotify song responses]
+2. Generate playlist from different inputs
+    GET /playlist_like/{whatever here}
+3. Generate image from playlist
+    GET /images/{playlist}
+        resp => path to image on server
+4. Save or retrieve playlists
+    GET /playlist/{number}
+        resp => [spotify song responses]
+    POST /playlist/{playlist=new_playlist}
+        resp => {
+            status
+            playlist_number
+        }
+    PUT /playlist/{number}
+
+
+- Get songs from text (optionally specify a user login)
+- Get songs from form (optionally specify a user login)
+- Get a link to a webpage to view a generated playlist
+- Get an image from a playlist?
+- log a user in using Spotify or Apple Music?
+
+Spotify API: https://developer.spotify.com/documentation/web-api/reference/#/operations/get-track
+WIP wireframe document: https://wireframe.cc/5UnMTW
