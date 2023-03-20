@@ -60,6 +60,11 @@ Backend Endpoints:
         }
     PUT /playlist/{number}
 
+Generating playlist workflow (not finalized):
+1. User inputs text prompts, which is sent to the Backend
+2. Backend uses openAI api to generate a list of song recommendations
+3. List of song names is converted to Spotify uris through their API (can be done by either Frontend or Backend)
+4. Frontend displays songs using Spotify embeds
 
 - Get songs from text (optionally specify a user login)
 - Get songs from form (optionally specify a user login)
