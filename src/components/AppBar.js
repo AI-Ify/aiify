@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { requestUserAuthorization } from '../logic/authorize';
 
 export default function MenuAppBar() {
   return (
@@ -15,7 +16,9 @@ export default function MenuAppBar() {
           <Typography variant="h5" component="div" align="left" sx={{ flexGrow: 1 }}>
             AI-ify
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit"
+            onClick={requestUserAuthorization}
+          >Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
